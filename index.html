@@ -1,0 +1,138 @@
+<!D<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+  </head>
+   <body>
+
+
+
+
+      <div class="bg" >
+        <div class="sidenav2 grey lighten-2 Who" >
+          <a href="#"class="btn btn-large left x"> X</a>
+          <h2>EHO WE ARE</h2>
+          <p>vfcb b hhfdhh hhfdxhb bhdhh hhhedbb hehh hhbcbhehdcb hhfhh  h hhfch hhh hbc bhhdhh hh hhdhh hh hhddh
+          fhhfhh hhhch hhhfhh hhhh hvh hhrhh hh hhrh hhhrh hhhrh vvhhhhrh hhhrhh hhrhhv hhhh</p>
+        </div>
+        <div class="sidenav2 grey lighten-2 About" >
+          <a href="#"class="btn btn-large left x"> X</a>
+          <h2>ABOUT US</h2>
+          <p>vfcb b hhfdhh hhfdxhb bhdhh hhhedbb hehh hhbcbhehdcb hhfhh  h hhfch hhh hbc bhhdhh hh hhdhh hh hhddh
+          fhhfhh hhhch hhhfhh hhhh hvh hhrhh hh hhrh hhhrh hhhrh vvhhhhrh hhhrhh hhrhhv hhhh</p>
+        </div>
+        <div class="sidenav2 grey lighten-2 Contact" >
+          <a href="#"class="btn btn-large left x"> X</a>
+          <h2>CONTACT</h2>
+          <p>vfcb b hhfdhh hhfdxhb bhdhh hhhedbb hehh hhbcbhehdcb hhfhh  h hhfch hhh hbc bhhdhh hh hhdhh hh hhddh
+          fhhfhh hhhch hhhfhh hhhh hvh hhrhh hh hhrh hhhrh hhhrh vvhhhhrh hhhrhh hhrhhv hhhh</p>
+        </div>
+        <header class="head">
+
+
+
+
+
+
+<a href="#" class="btn btn-large menu right menu white black-text s-menu"><i class="fas fa-bars left"></i>MENU</a>
+<!--logo-->
+<div class="logo white black-text left s-menu">
+  <img src="Third.jpg" alt="" class="responsive-img "></div>
+  </header>
+  <div class="c-body white-text">
+<i class="fas fa-angle-up  nav up"></i>
+    <p class="upper "><a   id="who">WHO WE ARE</a></p>
+    <p class="upper"><a class="a-" id="about">ABOUT COMPANY</a></p>
+    <p class="upper"><a  class="a-"id="contact">Contact Us</a></p>
+    <p class="upper"><a class="a-"id="who">Who We Are</a></p>
+    <p class="downer"><a class="a-"id="about">About Us</a></p>
+    <p class="downer"><a  class="a-"id="contact">Contact Us</a></p>
+    <p class="downer"><a class="a-"id="who">WHO WE ARE</a></p>
+    <p class="downer"><a class="a-"id="about">About Us</a></p>
+<i class="fas fa-angle-down down nav"></i>
+
+  </div>
+
+<i class="fas fa-arrow-right right r-arr white-text"></i>
+<i class="fas fa-arrow-left left l-arr white-text"></i>
+<i class="far fa-pause-circle audio white-text "></i>
+
+
+
+      </div>
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+     <script>
+       $(document).ready(function(){
+         $(".audio").click(function(){
+           if($(".audio").hasClass("fa-pause-circle")){
+           $(".audio").removeClass("fa-pause-circle");
+           $(".audio").addClass("fa-play-circle");
+           $(".bg").css("animation-play-state" , "paused");
+         }
+           else{
+             $(".audio").removeClass("fa-play-circle");
+             $(".audio").addClass("fa-pause-circle");
+             $(".bg").css("animation-play-state" , "running");
+           }
+         });
+         $(".up").click(function(){
+           if($(".downer").css("display" , "block")){
+             $(".downer").css("display" , "none");
+             $(".upper").css("display" , "block");
+           }
+         });
+         $(".down").click(function(){
+           if($(".upper").css("display" , "block")){
+             $(".upper").css("display" , "none");
+             $(".downer").css("display" , "block");
+           }
+         });
+         $(".s-menu").click(function(){
+           if($(".bg").css("opacity") == 1){
+             $(".bg").css("opacity" , "0.4");
+           }else{
+             $(".bg").css("opacity" , "1");
+           }
+          $(".c-body").toggle();
+
+
+         });
+         $("#who").click(function(){
+           $(".Who").css("width" , "100%");
+
+
+         });
+         $("#about").click(function(){
+         $(".About").css("width" , "100%");
+
+
+         });
+         $("#contact").click(function(){
+
+$(".Contact").css("width" , "100%");
+
+         });
+         $(".x").click(function(){
+           $(".lighten-2").css("width" , "0");
+         });
+
+
+       });
+     </script>
+
+   </body>
+ </html>

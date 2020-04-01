@@ -1,0 +1,173 @@
+body,html{
+  height: 100%;
+
+}
+.overlay{
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  cursor: pointer;
+  background-color: rgba(255 , 255, 255, 0.6);
+
+}
+.main{
+  position: relative;
+}
+
+.bg{
+  background-image: url(Fourth.jpg);
+  height: 100%;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1vw;
+position: relative;
+  animation-name: example;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-duration: 16s;
+
+}
+.sidenav2{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+.bg2{
+  position: absolute;
+  margin: 1vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+ @keyframes example {
+  0% {background-image: url(Fourth.jpg);}
+  50% {background-image: url(Third.jpg);}
+
+}
+.menu{
+  margin: 1vw;
+
+}
+.logo{
+  display: inline-block;
+  height: 6rem;
+  width: 4.5rem;
+  text-align: center;
+  margin: 1vw;
+
+}
+.l-cont{
+  margin: 0;
+}
+.head{
+  height: 6.5vw;
+  background-color: transparent;
+}
+.body{
+  line-height: 2.5;
+  vertical-align: middle;
+z-index: 1;
+  margin: auto 0;
+  text-align: center;
+
+}
+.r-arr{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 5rem;
+  margin: 1.5vw;
+  transform: translateY(-50%);
+
+
+}
+.l-arr{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 5rem;
+  margin: 1vw;
+  transform: translateY(-50%);
+
+
+}
+.audio{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 1vw;
+  font-size: 5rem;
+}
+.c-body{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 2.5rem;
+  text-align: center;
+  color: black;
+  display: none;
+
+
+
+
+}
+.nav{
+  display: none;
+  font-size: 2.5rem;
+  width: 6rem;
+}
+.upper{
+  display: block;
+  margin: 0;
+  font-weight: normal;
+
+}
+.downer{
+  font-weight: normal;
+  display: block;
+  margin: 0;
+
+}
+@media screen and (max-width: 670px){
+  .c-body{
+    width: 310px;
+    height: 250px;
+    font-size: 2rem;
+
+
+  }
+  .nav{
+    display: inline-block;
+    font-size: 2.5rem;
+  }
+  .upper{
+    display: block;
+
+  }
+  .downer{
+    display: none;
+  }
+  .audio{
+    font-size: 4.5rem;
+  }
+  .r-arr{
+    font-size: 4rem;
+  }
+  .l-arr{
+    font-size: 4rem;
+  }
+}
